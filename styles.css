@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@400;500;700&display=swap');
+
+:root {
+    --Dark-cyan: hsl(158, 36%, 37%); 
+    --Cream: hsl(30, 38%, 92%);
+    --Very-dark-blue: hsl(116, 100%, 10%); 
+    --Dark-grayish-blue: hsl(228, 12%, 48%); 
+    --White: hsl(0, 0%, 100%);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--Cream);
+}
+
+.main-image {
+    max-width: 100%;
+}
+.desktop_image {
+    display: none;
+}
+.card{
+    margin: 6.5rem auto;
+    background: var(--White);
+    border-radius: 15px;
+    overflow: hidden;
+    max-width: 400px;
+}
+.container {
+    padding: 1.8rem;
+}
+.title {
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 6px;
+    font-weight: 400;
+    color: var(--Dark-grayish-blue);
+    margin-top: 0;
+}
+h1 {
+    font-family: 'Fraunces', sans-serif;
+    margin-top: 0;
+}
+.description {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    color: var(--Dark-grayish-blue);
+}
+.price{
+    font-family: 'Fraunces', sans-serif;
+    color: var(--Dark-cyan);
+    font-size: 2rem;
+    display: flex;
+    gap: 1.5rem;
+}
+.original_price {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    color: var(--Dark-grayish-blue);
+    font-size: 1rem;
+    text-decoration: line-through;
+    align-self: center;
+}
+button {
+    background: var(--Dark-cyan);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 0.75rem;
+    padding: 0.8rem 1.2rem;
+    border: none;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 10px;
+}
+button:hover {
+    background: var(--Very-dark-blue);
+    cursor: pointer;
+}
+a {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: white;
+    text-decoration: none;
+}
+
+@media (min-width: 1000px) {
+    .main-image {
+        display: none;
+    }
+    .card {
+    display: flex;
+    max-width: 700px;
+    }
+    .desktop_image {
+        display: block;
+        max-width: 43%;
+        object-fit: cover;
+    }
+    .container {
+        margin-top: 1rem;
+    }
+    
+    
+
+}
